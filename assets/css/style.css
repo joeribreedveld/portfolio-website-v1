@@ -6,8 +6,10 @@
 }
 
 :root {
-    --text-color-1: white;
-    --text-color-2: black;
+    --text-color-1: #000000;
+    --text-color-2: #FFFFFF;
+    --header-background-color: #404963;
+    --button-color: #808EA2;
 }
 
 html {
@@ -22,7 +24,8 @@ body {
 
 /* Text Styles */
 p, h1, h2, h3, h4, h5, h6, a {
-    color: black;
+    color: var(--text-color-1);
+    -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -33,25 +36,98 @@ p {
 h1 {
     font-size: 6.4rem;
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 h2 {
     font-size: 3.2rem;
     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 h3 {
     font-size: 2.4rem;
     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 a {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 /* Header */
+.header {
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: var(--header-background-color);
+    padding: 0vh 20vw;
+}
 
+.header p, .header h1, .header h2, .header h3, .header a {
+    color: var(--text-color-2);
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 7.5vh;
+}
+
+.header-nav-ul {
+    min-width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-ul-li-a {
+    font-weight: 500;
+}
+
+.header-content {
+    display: flex;
+    min-height: 92.5vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.header-content-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header-content-button {
+    height: 5rem;
+    width: 16rem;
+    border-radius: 3.2rem;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background: var(--button-color);
+    color: var(--text-color-2);
+    font-size: 1.6rem;
+}
+
+.header-content-socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 25rem;
+}
+
+.header-content-socials > i {
+    font-size: 2.5rem;
+    color: var(--text-color-2);
+}
 
 /* Main */
 
