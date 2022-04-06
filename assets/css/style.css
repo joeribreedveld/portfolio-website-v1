@@ -1,0 +1,63 @@
+/* Important Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color-1: white;
+    --text-color-2: black;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+/* Text Styles */
+p, h1, h2, h3, h4, h5, h6, a {
+    color: black;
+}
+
+p {
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+
+
+/* Main */
+
+
+/* Footer */
+
+
+/* Media */
+
