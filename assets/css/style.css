@@ -386,3 +386,12 @@ article {
         height: 20rem;
     }
 }
+
+/* Animations */
+article:hover {
+    transform: scale(1.05);
+}
+
+article {
+    transition: transform 0.2s;
+}
