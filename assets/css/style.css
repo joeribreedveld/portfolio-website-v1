@@ -21,6 +21,7 @@ body {
     min-width: 100vw;
     min-height: 100vh;
     max-width: 100vw;
+    overflow-x: hidden;
 }
 
 /* Text Styles */
@@ -388,10 +389,22 @@ article {
 }
 
 /* Animations */
-article:hover {
+.main-work-article:hover, button:hover {
     transform: scale(1.05);
 }
 
-article {
+.main-work-article, button {
     transition: transform 0.2s;
+}
+
+.main-experience-item:hover .experience-progress {
+    background: var(--header-background-color);
+}
+
+.experience-progress {
+    transition: background ease-in-out 0.2s;
+}
+
+.header-nav-ul-li-a:hover {
+    text-decoration: underline;
 }
