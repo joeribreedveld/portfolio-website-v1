@@ -14,6 +14,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -131,6 +132,16 @@ article {
 }
 
 .header-content-socials > i {
+    font-size: 2.5rem;
+    color: var(--text-color-2);
+}
+
+.header-content-socials > a {
+    font-size: 2.5rem;
+    color: var(--text-color-2);
+}
+
+.footer-content-socials > a {
     font-size: 2.5rem;
     color: var(--text-color-2);
 }
